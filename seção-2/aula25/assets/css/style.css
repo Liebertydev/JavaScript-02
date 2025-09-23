@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primeira-cor: #005662;
+    --primeira-cor-dark: rgb(9, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primeira-cor);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    height: 100vh;
+}
+
+.interface {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+
+
+.container {
+    width: 70%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+.container .tabela {
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.imc-tabela h3,
+.imc-resultado h3 {
+    margin-bottom: 5px;
+}
+
+.imc-tabela p,
+.imc-resultado p {
+    margin-top: 10px;
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid black;
+}
+
+form input:focus {
+    outline: 2px solid var(--primeira-cor);
+    border: none;
+}
+
+form button {
+    border: none;
+    background-color: var(--primeira-cor);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: var(--primeira-cor-dark);
+}
+
+.paragrafo-true {
+    background-color: rgb(109, 255, 182);
+    padding: 10px 20px;
+}
+
+.paragrafo-false {
+    background-color: rgb(253, 109, 109);
+    padding: 10px 20px;
+}
+
+@media (max-width: 800px) {
+    .interface {
+        padding: 40px 0;
+    }
+
+    .container {
+        width: 93%;
+    }
+
+    .container .tabela {
+        margin: 20px 0px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .imc-tabela h3, .imc-resultado h3 {
+        font-size: 20px;
+    }
+
+    .imc-tabela p, .imc-resultado p {
+        font-size: 17px;
+    }
+
+    .calculo h1{
+        margin-bottom: 20px;
+    }
+
+}
