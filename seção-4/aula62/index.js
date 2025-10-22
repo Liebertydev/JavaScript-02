@@ -8,7 +8,7 @@ console.log(nomes);
 
 //  Valor por referência
 
-const frutas = ['Maçã', 'Banana', 'Uva'];
+const frutas = new Array('Maçã', 'Banana', 'Uva');
 const novo = frutas; 
 //Para copiar use o operador spread = "..."
 //  const novo = [...nomes]; Copiamos o valor
@@ -32,4 +32,4 @@ console.log(novo2); //  1, 3 = ele corta o indice 0 e 3
 // ou
 
 novo2 = nomes2.slice(0, -1); // retira o ultimo elemento
-console.log(novo2); // mostra todos menos any
+console.log(novo2); // mostra todos menos ana
