@@ -22,7 +22,7 @@ function criaPessoa(nome, sobrenome) {
 } 
 
 const p1 = criaPessoa('Lieberty', 'Holanda');
-console.log(p1.nomeCompleto()); //sem get usava sem os ()
+console.log(p1.nomeCompleto()); //com get usava sem os ()
 
 function Pessoa(nome, sobrenome) {
     this.nome = nome;

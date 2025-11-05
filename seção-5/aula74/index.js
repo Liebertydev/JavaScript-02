@@ -11,7 +11,7 @@ console.log(p1.nome);
 
 function Pessoa2(nome, idade) {
     this.nome = nome;
-    this.idade = 19;
+    this.idade = idade;
 
     Object.freeze(this);
 }
