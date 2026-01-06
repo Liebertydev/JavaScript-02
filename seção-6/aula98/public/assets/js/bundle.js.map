@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAAAA,MAAM","sources":["webpack://aula98/./src/index.js"],"sourcesContent":["alert('Olá, mundo');"],"names":["alert"],"ignoreList":[],"sourceRoot":""}
