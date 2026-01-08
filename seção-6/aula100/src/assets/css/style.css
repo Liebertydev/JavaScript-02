@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+:root {
+  --primary-color: #115666;
+  --primary-color-darker: #093038;
+  --bg-gradient: linear-gradient(135deg, #115666, #0b3f4a);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  font-family: 'Open Sans', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* empurra o footer pra baixo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  max-width: 640px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.6s ease-in-out;
+  font-weight: bolder;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.container button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 16px;
+  font-family: 'Open Sans', sans-serif;
+  transition: transform 0.2s, background 0.3s, box-shadow 0.2s;
+  box-shadow: 0 6px 15px rgba(17, 86, 102, 0.3);
+}
+
+.container button:hover {
+  background: var(--primary-color-darker);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(9, 48, 56, 0.35);
+}
+
+.container button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(9, 48, 56, 0.3);
+}
+
+.cpf-gerado {
+  margin-top: 30px;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0 0 8px;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: background 0.3s, color 0.3s;
+  font-size: 20px;
+}
+
+footer a:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
