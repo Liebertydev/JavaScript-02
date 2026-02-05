@@ -3,7 +3,7 @@ function index(req, res) {
 }
 
 function trataPost(req, res) {
-    res.send('Hey, sou sua nova rota de POST.');
+    res.send('Hey, Seu formulário foi enviado.');
 }
 
 module.exports = {
