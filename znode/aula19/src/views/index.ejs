@@ -2,28 +2,10 @@
 
 
   <section class="container">
-    <h1>
-      <% if(false) { %> <!--faz nao ser executado-->
+    <h1> <%= umaVariavelLocal %> </h1>
 
-        <% if(typeof titulo !== 'undefined') { %>
-            <%= titulo %>
-        <% } else { %>
-            O título não foi enviado. <br>
-        <% } %>
-
-      <% }%>
-      
-      <% if(false) { %> <!--faz nao ser executado-->
-        <% numeros.forEach(num => { %>
-          <%= num %> <br>
-        <% }); %>
-    <% }%>
-
-    <%= umaVariavelLocal %>
-
-
-    </h1>
     <form action="/" method="post">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
       <label>Cliente</label>
       <input type="text" name="nome">
       <button>Submit</button>
