@@ -1,7 +1,7 @@
 <% if(errors.length> 0) { %>
     <div class="row">
         <div class="col my-3">
-            <div class="alert alert-danger">
+            <div class="alert alert-danger alert-dismissible fade show flash-msg">
                 <% errors.forEach(erro=> { %>
                     <%= erro %><br>
                         <% }); %>
@@ -10,14 +10,14 @@
     </div>
     <% } %>
 
-        <% if(success.length > 0) { %>
-            <div class="row">
-                <div class="col my-3">
-                    <div class="alert alert-success">
-                        <% success.forEach(success=> { %>
-                            <%= success %><br>
-                                <% }); %>
-                    </div>
-                </div>
+<% if(success.length> 0) { %>
+    <div class="row">
+        <div class="col my-3">
+            <div class="alert alert-success alert-dismissible fade show flash-msg">
+                <% success.forEach(success=> { %>
+                    <%= success %><br>
+                        <% }); %>
             </div>
-            <% } %>
+        </div>
+    </div>
+    <% } %>
