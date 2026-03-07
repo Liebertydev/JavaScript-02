@@ -59,6 +59,11 @@ app.set('view engine', 'ejs');
 // ROTAS
 app.use(routes);
 
+// Erro 404
+app.use((req, res) => {
+    res.status(404).render('404');
+});
+
 
 // MIDDLEWARE DE ERRO
 app.use(checkCsrfError);

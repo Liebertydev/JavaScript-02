@@ -53,15 +53,15 @@ exports.login = async function (req, res, next) {
 };
 
 exports.logout = function(req, res, next) {
-    req.session.destroy(err => {
-    if (err) {
-        console.log(err);
-        return res.redirect('/');
-    }
+        req.session.destroy(err => {
+        if (err) {
+            console.log(err);
+            return res.redirect('/');
+        }
 
-    res.clearCookie('connect.sid');
-    return res.redirect('/');
-});
+        res.clearCookie('connect.sid');
+        return res.redirect('/');
+}       );
 }
 
 
